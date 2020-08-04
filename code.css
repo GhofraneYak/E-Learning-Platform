@@ -74,6 +74,7 @@
 .dropdown-content a:hover
 {
 	background-color: #ddd;
+	color: #870002;
 }
 
 /* Show the dropdown menu on hover */
