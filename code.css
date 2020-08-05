@@ -174,8 +174,25 @@ p
   color: #f2f2f2;
   padding: 8px 12px;
   position: absolute;
-  left: 200px;
+  left: 150px;
   margin-top: 650px;
+}
+
+
+.text-title
+{
+  color: #f2f2f2;
+  position: absolute;
+  left: 100px;
+  margin-top: 200px;
+}
+
+.text-title2
+{
+  color: #f2f2f2;
+  position: absolute;
+  left: 110px;
+  margin-top: 105px;
 }
 
 
