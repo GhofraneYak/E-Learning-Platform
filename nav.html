@@ -1,0 +1,142 @@
+<!--Bootstrap links-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="code.css">
+<!--End bootstrap links-->
+<style>
+    /* Make the image fully responsive */
+    .carousel-inner img {
+      width: 100%;
+      height: 100%;
+    }
+    </style>
+    <!--Navbar avec  Bootstrap-->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#"><img src="logo.png" style="width: 50px; length:50px;" alt="Brand"></a>
+      
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+      
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Courses
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Programming</a>
+              <a class="dropdown-item" href="#">Communication</a>
+              <a class="dropdown-item" href="#">Management</a>
+            </div>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="margin-left: 700px;">Sign in</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sign up</a>
+          </li>
+        </ul>
+      </nav>
+      <!--End New Navbar-->
+
+
+
+
+<!-- THE VIDEO -->
+<div class="wrapper">
+
+    <video autoplay loop muted class="wrapper__video">
+       <source src="rain.mp4">
+    </video>
+   
+ </div>
+ 
+ <div>
+   <h1 class="text-title"> V- Learning</h1>
+   <p class="text-title2"> Your E-Learning Platform</p>
+ </div>
+ 
+ <!-- END VIDEO -->
+ <br>
+
+<!--Carousel-->
+<div class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img3.png" alt="Los Angeles" width="1100" height="500">
+        <div class="carousel-caption">
+          <h3>Los Angeles</h3>
+          <p>We had such a great time in LA!</p>
+        </div>   
+      </div>
+      <div class="carousel-item">
+        <img src="img2.png" alt="Chicago" width="1100" height="500">
+        <div class="carousel-caption">
+          <h3>Chicago</h3>
+          <p>Thank you, Chicago!</p>
+        </div>   
+      </div>
+      <div class="carousel-item">
+        <img src="img1.jpg" alt="New York" width="1100" height="500">
+        <div class="carousel-caption">
+          <h3>New York</h3>
+          <p>We love the Big Apple!</p>
+        </div>   
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+  
+
+<!--Bootstrap Cards lil Courses-->
+
+
+  <div class="card-deck">
+    <div class="card" style="width:400px">
+      <img class="card-img-top" src="img3.png" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">HTMl&CSS</h4>
+        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+        <a href="#" class="btn btn-primary">learn More</a>
+      </div>
+    </div>
+        <div class="card" style="width:400px">
+          <img class="card-img-top" src="img2.png" alt="Card image" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+          </div>
+        </div>
+        <div class="card" style="width:400px">
+            <img class="card-img-top" src="img1.jpg" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+          </div>
+        
+</div>
