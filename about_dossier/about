@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<!--Bootstrap links-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+      
+<!--End bootstrap links-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+
+    <title>Scroll</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="nav.css" />
+    <style>
+        
+    </style>
+  </head>
+
+  <body>
+    <!--Navbar-->
+
+    <header>
+      <a href="#" class="site-logo" aria-label="homepage">V-Learn</a>
+      <nav class="main-nav">
+        <ul class="nav__list">
+          <li class="nav__list-item"><a href="#" class="nav__link">Home</a></li>
+          <li class="nav__list-item">
+            <a href="#" class="nav__link">About</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#" class="nav__link">Contact Us</a>
+          </li>
+          <li class="nav__list-item"><a href="#" class="nav__link">Courses</a></li>
+        </ul>
+      </nav>
+      <nav class="account">
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <a class="nav__link nav__link--btn" href="#">Login</a>
+          </li>
+          <li class="nav__list-item">
+            <a
+              class="nav__link nav__link--btn nav__link--btn--highlight"
+              href="#"
+              >Sign up</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+<!--End Navbar-->
+<section class="home-intro">
+
+    <img src="img2.webp" width="480" height="320" style="width: 100%;height: 100%;">
+    <div style="position: absolute;bottom: 1px;right: 16px; color: white;"> Best guide , learn real quick</div>
+    
+        <script src="observers.js"></script>
+            
+          </section>
+
+
+
+<!--essai-->
+
+
+<div class = "container-fluid">         
+    <div class = "row">
+       <div class = "col-sm-4" style = " background-color:#EBECEC; color: black; text-align: center; margin-left: 15px;">
+               <br><br><br>
+               <p> <span class="numbers"> 51+ </span>
+                 <br>
+                 Enseignants
+               </p>
+               <br><br>
+
+               <p> <span class="numbers"> 64+ </span>
+                 <br>
+                 Ecoles utilisant cette platform comme outil d'Enseignement
+               </p>
+
+               <br><br>
+               <p> <span class="numbers"> 200,000 + </span>
+                 <br>
+                Etudiants inscrits
+               </p>
+
+               <br><br><br>
+       </div>
+
+
+       <div class = "col-sm-6" style = "background-image: url(back1.png); padding-left: 80px;">
+         <br><br>
+         <p> 
+           <div class="content">
+            <h1 class="text-center">We’re about the results of online learning and the people along the way!</h1>
+           </div>
+
+           <br><br><br><br>
+           <div class="second-content">
+            <p>Thinkific is a software platform that enables entrepreneurs to create,<br> market, sell, and deliver their own online courses. <br>
+                Our mission is no less than to revolutionize the way people learn <br>
+                and earn online by giving them the tools they need to turn their expertise <br>
+                into a sustainable business that impacts both them and their audience.</p>
+         </p>
+         <br><br>
+       </div>
+
+    </div>
+</div> <br> <br>
+    
+    
+ 
+
+<div class="jumbotron">
+        <div class="card-success" >
+            <section class="home-intro">
+                <img src="img3.webp" width="480" height="320" style="width: 100%;height: 100%;">
+                <div style="position: absolute;bottom: 1px;right: 16px; color: white;"> Best guide , learn real quick</div>
+                <script src="observers.js"></script>                     
+            </section>
+            <div class="card-body">
+            <h2 class="card-title text-center">It all started with a single course creator and a big problem</h2>
+            <p class="card-text">Thinkific was conceived when co-founder and CEO Greg Smith decided to take his LSAT course online with the help of his brother Matt Smith to reach more students. For Greg, taking his course online meant an opportunity to reach more students globally, and to generate more revenue and freedom. </p>
+            <p class="card-text">The revenues from his online course soon surpassed his corporate law practice, and as the course took off 
+            and helped more and more students, other entrepreneurs and businesses reached out asking how they could do the same.
+            The revenues from his online course soon surpassed his corporate law practice, and as the course took off and helped more and more students, other entrepreneurs and businesses reached out asking how they could do the same. They wanted to sell their own courses on their website and drive business growth under their own brand, with full control over their content, data, and business. Greg and Matt, along with co-founders Miranda Lievers and Matt Payne, 
+            set out to build the best platform for course creators and businesses looking to educate clients and potential clients.</p>
+            </div>
+        </div>   
+</div>
+
+<div class="text-center" style="background-image:url('img5.webp');">
+    <h6 style="padding:10px;"> Try G&F platform yourself !</h6>
+    <h2>Accomplish your student success <br> goals faster with G&F e_learning platform.</h2><br> 
+    <form action="" class="form-inline" style="position: relative;padding-left: 35%;">
+        <input type="text" name="email" placeholder="you@example.com"> &nbsp; &nbsp;
+        <button type="submit" class="btn btn-primary ">Get Started</button> <br>
+    </form>
+<br>
+
+</div>
+
+  </body>
+  <!-- SOCIAL MEDIA -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="container d-flex justify-content-center">
+
+  <div class="social-buttons mt-5">
+    <button class="neo-button"><i class="fa fa-facebook fa-1x"></i> </button>
+    <button class="neo-button"><i class="fa fa-linkedin fa-1x"></i></button>
+    <button class="neo-button"><i class="fa fa-google fa-1x"></i> </button>
+    <button class="neo-button"><i class="fa fa-youtube fa-1x"></i> </button>
+    <button class="neo-button"><i class="fa fa-twitter fa-1x"></i> </button>
+
+  </div>
+
+</div>
+<!-- SOCIAL MEDIA -->
+<br>
+<script src="observers.js"></script>
+
+</html>
