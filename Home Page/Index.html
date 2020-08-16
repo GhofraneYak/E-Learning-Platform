@@ -20,7 +20,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="signupcss.css" />
   </head>
+
+
 
   <body>
 
@@ -30,7 +33,7 @@
         <ul class="nav__list">
           <li class="nav__list-item"><a href="index.html" class="nav__link">Home</a></li>
           <li class="nav__list-item">
-            <a href="#" class="nav__link">About</a>
+            <a href="about.html" class="nav__link">About</a>
           </li>
           <li class="nav__list-item">
             <a href="contact.html" class="nav__link">Contact Us</a>
@@ -40,18 +43,17 @@
       </nav>
       <nav class="account">
         <ul class="nav__list">
-          <li class="nav__list-item">
-            <a class="nav__link nav__link--btn" href="login.html">Login</a>
+          <li class="nav__list-item">          
+            <a class="nav__link nav__link--btn" href="#" onclick="document.getElementById('id02').style.display='block'">Login</a>
           </li>
           <li class="nav__list-item">
-            <a
-              class="nav__link nav__link--btn nav__link--btn--highlight"
-              href="signup.html"
-              >Sign up</a>
+            <a class="nav__link nav__link--btn nav__link--btn--highlight" href="#" onclick="document.getElementById('id02').style.display='block'">Sign Up</a>
           </li>
         </ul>
       </nav>
     </header>
+
+
 
     <main>
       <section class="home-intro">
@@ -98,6 +100,193 @@
         
       </section>
     </main>
+
+
+
+
+
+<!-- SIGN UP -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+  <div class="container">
+        <div class="row">
+      <div class="col-md-5 mx-auto">
+      <div id="second">
+        <div class="myform form ">
+           <div class="logo mb-3">
+             <div class="col-md-12 text-center">
+              <h1>Login</h1>
+             </div>
+          </div>
+                   <form action="" method="post" name="login">
+                           <div class="form-group">
+                              <label for="exampleInputEmail1">Email address</label>
+                              <input type="email" name="email"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                           </div>
+                           <div class="form-group">
+                              <label for="exampleInputEmail1">Password</label>
+                              <input type="password" name="password" id="password"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Password">
+                           </div>
+                           <div class="form-group">
+                              <p class="text-center">By signing up you accept our Terms Of Use</p>
+                           </div>
+                           <div class="col-md-12 text-center ">
+                              <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Login</button>
+                           </div>
+                           <br>
+                           <div class="form-group">
+                              <p class="text-center">Don't have account? <a href="#" id="signup">Sign up here</a></p>
+                           </div>
+                        </form>
+                 
+        </div>
+      </div>
+ <div id="first">
+       <div class="myform form ">
+        <div class="logo mb-3">
+             <div class="col-md-12 text-center">
+               <h1 >Signup</h1>
+                </div>
+  </div>
+  <form action="#" name="registration">
+    <div class="form-group">
+        <label for="exampleInputEmail1">First Name</label>
+           <input type="text"  name="firstname" class="form-control" id="firstname" aria-describedby="emailHelp" placeholder="Enter Firstname">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Last Name</label>
+                    <input type="text"  name="lastname" class="form-control" id="lastname" aria-describedby="emailHelp" placeholder="Enter Lastname">
+     </div>
+    <div class="form-group">
+           <label for="exampleInputEmail1">Email address</label>
+         <input type="email" name="email"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Password</label>
+         <input type="password" name="password" id="password"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Password">
+        </div>
+        <div class="col-md-12 text-center mb-3">
+            <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Get Started For Free</button>
+          </div>
+                           <div class="col-md-12 ">
+                    <div class="form-group">
+                        <p class="text-center"><a href="#" id="signin">Already have an account?</a></p>
+                    </div>
+                </div>
+                </div>
+            </form>
+            </div>
+      </div>
+    </div>
+      </div>   
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<!-- END SIGN UP -->
+
+
+
+
+<!-- SIGN IN -->
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+  <div class="container">
+        <div class="row">
+      <div class="col-md-5 mx-auto">
+      <div id="first">
+        <div class="myform form ">
+           <div class="logo mb-3">
+             <div class="col-md-12 text-center">
+              <h1>Login</h1>
+             </div>
+          </div>
+                   <form action="" method="post" name="login">
+                           <div class="form-group">
+                              <label for="exampleInputEmail1">Email address</label>
+                              <input type="email" name="email"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                           </div>
+                           <div class="form-group">
+                              <label for="exampleInputEmail1">Password</label>
+                              <input type="password" name="password" id="password"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Password">
+                           </div>
+                           <div class="form-group">
+                              <p class="text-center">By signing up you accept our Terms Of Use</p>
+                           </div>
+                           <div class="col-md-12 text-center ">
+                              <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Login</button>
+                           </div>
+<br>
+                        </form>
+                 
+        </div>
+      </div>
+ <div id="second">
+       <div class="myform form ">
+        <div class="logo mb-3">
+             <div class="col-md-12 text-center">
+               <h1 >Signup</h1>
+                </div>
+  </div>
+  <form action="#" name="registration">
+    <div class="form-group">
+        <label for="exampleInputEmail1">First Name</label>
+           <input type="text"  name="firstname" class="form-control" id="firstname" aria-describedby="emailHelp" placeholder="Enter Firstname">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Last Name</label>
+                    <input type="text"  name="lastname" class="form-control" id="lastname" aria-describedby="emailHelp" placeholder="Enter Lastname">
+     </div>
+    <div class="form-group">
+           <label for="exampleInputEmail1">Email address</label>
+         <input type="email" name="email"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Password</label>
+         <input type="password" name="password" id="password"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Password">
+        </div>
+        <div class="col-md-12 text-center mb-3">
+            <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Get Started For Free</button>
+          </div>
+                           <div class="col-md-12 ">
+                    <div class="form-group">
+                        <p class="text-center"><a href="#" id="signin">Already have an account?</a></p>
+                    </div>
+                </div>
+                </div>
+            </form>
+            </div>
+      </div>
+    </div>
+      </div>   
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<!-- END SIGN IN -->
+
 
 
 <div class = "container-fluid">         
@@ -216,7 +405,7 @@
 <br>
 
     <script src="observers.js"></script>
-
+    <script src="signup.js"></script>
 
     </body>
     </html>
