@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<!--Bootstrap links-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+<!--End bootstrap links-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>About</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="<?php echo base_url('assets/projet_platforme/css/main.css'); ?>" />
+    <link rel="stylesheet" href="<?php echo base_url('assets/projet_platforme/css/signupcss.css'); ?>" />
+
+    <style>
+        
+    </style>
+  </head>
+
+  <body>
+    <!--Navbar-->
+
+    <header>
+      <a href="index.html" class="site-logo" aria-label="homepage">G&F-Learn</a>
+      <nav class="main-nav">
+        <ul class="nav__list">
+          <li class="nav__list-item"><a href="index.html" class="nav__link">Home</a></li>
+          <li class="nav__list-item">
+            <a href="about.html" class="nav__link">About</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="contact.html" class="nav__link">Contact Us</a>
+          </li>
+          <li class="nav__list-item"><a href="courses.html" class="nav__link">Courses</a></li>
+        </ul>
+      </nav>
+      <nav class="account">
+        <ul class="nav__list">
+          <li class="nav__list-item">          
+            <a class="nav__link nav__link--btn" href="#" onclick="document.getElementById('id02').style.display='block'">Login</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="nav__link nav__link--btn nav__link--btn--highlight" href="#" onclick="document.getElementById('id01').style.display='block'">Sign Up</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+<!--End Navbar-->
+<section class="home-intro">
+    <img src="<?php echo base_url('assets/images/g&f/img2.webp'); ?>" style="width: 100%;">        
+</section>
+
+
+
+
+<!-- SIGN UP -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+  <div class="container">
+        <div class="row">
+      <div class="col-md-5 mx-auto">
+      <div id="second">
+        <div class="myform form ">
+           <div class="logo mb-3">
+             <div class="col-md-12 text-center">
+              <h1>Login</h1>
+             </div>
+          </div>
+        <form action="" method="post" name="login">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+               <input type="email" name="email"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Password</label>
+              <input type="password" name="password" id="password"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Password">
+           </div>
+           <div class="form-group">
+              <p class="text-center">By signing up you accept our Terms Of Use</p>
+            </div>
+           <div class="col-md-12 text-center ">
+              <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Login</button>
+           </div>
+           <br>
+            <div class="form-group">
+               <p class="text-center">Don't have account? <a href="#" id="signup">Sign up here</a></p>
+            </div>
+        </form>
+                 
+        </div>
+      </div>
+ <div id="first">
+       <div class="myform form ">
+        <div class="logo mb-3">
+             <div class="col-md-12 text-center">
+               <h1 >Signup</h1>
+                </div>
+  </div>
+  <form action="#" name="registration">
+    <div class="form-group">
+        <label for="exampleInputEmail1">First Name</label>
+           <input type="text"  name="firstname" class="form-control" id="firstname" aria-describedby="emailHelp" placeholder="Enter Firstname">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Last Name</label>
+                    <input type="text"  name="lastname" class="form-control" id="lastname" aria-describedby="emailHelp" placeholder="Enter Lastname">
+     </div>
+     <div class="form-group">
+      <label style="padding-right: 20px;">Profession</label>
+         <select name="profession" id="nationality">
+           <option value="student">Student</option>
+           <option value="teacher">Teacher</option>
+         </select>
+    </div>
+
+    <div class="form-group">
+        <label for="exampleInputEmail1" style="padding-right: 20px;">Nationality</label>
+          <select name="nationality" id="nationality">
+            <option value="tunisian">Tunisian</option>
+            <option value="french">French</option>
+            <option value="american">American</option>
+            <option value="african">African</option>
+          </select>
+        </div>
+
+
+
+
+    <div class="form-group">
+           <label for="exampleInputEmail1">Email address</label>
+         <input type="email" name="email"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Password</label>
+         <input type="password" name="password" id="password"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Password">
+        </div>
+        <div class="col-md-12 text-center mb-3">
+            <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Get Started For Free</button>
+          </div>
+                           <div class="col-md-12 ">
+                    <div class="form-group">
+                        <p class="text-center"><a href="#" id="signin">Already have an account?</a></p>
+                    </div>
+                </div>
+                </div>
+            </form>
+            </div>
+      </div>
+    </div>
+      </div>   
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<!-- END SIGN UP -->
+
+
+
+
+<!-- SIGN IN -->
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+  <div class="container">
+        <div class="row">
+      <div class="col-md-5 mx-auto">
+      <div id="first">
+        <div class="myform form ">
+           <div class="logo mb-3">
+             <div class="col-md-12 text-center">
+              <h1>Login</h1>
+             </div>
+          </div>
+          <form action="" method="post" name="login">
+                 <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" name="email"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                 </div>
+                 <div class="form-group">
+                    <label for="exampleInputEmail1">Password</label>
+                    <input type="password" name="password" id="password"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Password">
+                 </div>
+                 <div class="form-group">
+                    <p class="text-center">By signing up you accept our Terms Of Use</p>
+                 </div>
+                 <div class="col-md-12 text-center ">
+                    <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Login</button>
+                  </div>
+<br>
+               </form>
+                 
+        </div>
+      </div>
+ <div id="second">
+       <div class="myform form ">
+        <div class="logo mb-3">
+             <div class="col-md-12 text-center">
+               <h1 >Signup</h1>
+                </div>
+  </div>
+  <form action="#" name="registration">
+    <div class="form-group">
+        <label for="exampleInputEmail1">First Name</label>
+           <input type="text"  name="firstname" class="form-control" id="firstname" aria-describedby="emailHelp" placeholder="Enter Firstname">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Last Name</label>
+                    <input type="text"  name="lastname" class="form-control" id="lastname" aria-describedby="emailHelp" placeholder="Enter Lastname">
+     </div>
+    <div class="form-group">
+           <label for="exampleInputEmail1">Email address</label>
+         <input type="email" name="email"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Password</label>
+         <input type="password" name="password" id="password"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Password">
+        </div>
+        <div class="col-md-12 text-center mb-3">
+            <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Get Started For Free</button>
+          </div>
+                           <div class="col-md-12 ">
+                    <div class="form-group">
+                        <p class="text-center"><a href="#" id="signin">Already have an account?</a></p>
+                    </div>
+                </div>
+                </div>
+            </form>
+            </div>
+      </div>
+    </div>
+      </div>   
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<!-- END SIGN IN -->
+
+
+
+<!--//////////////////////////////////////////////////-->
+
+
+<div class = "container-fluid">         
+         <div class = "row">
+            <div class = "col-sm-5" style = "background-color:#f4f4f4; color: black; text-align: center;">
+                    <br><br><br>
+
+                    <p> <span class="numbers"> 51+ </span>
+                      <br>
+                      Teachers
+                    </p>
+                    <br><br>
+
+                    <p> <span class="numbers"> 64+ </span>
+                      <br>
+                      Universities Using V-Learn
+                    </p>
+
+                    <br><br>
+                    <p> <span class="numbers"> 200,000+ </span>
+                      <br>
+                      Students Subscribed to V-Learn
+                    </p>
+
+                    <br>
+            </div>
+          
+            <div class = "col-sm-7" style = "background-color:#EBECEC;">
+              <br>
+
+                <div class="content" style=" width: 520px; color: black; text-align: center; font-size: 34px;">
+                  <br>
+                   We’re about the results of online learning and the people along the way!
+                </div>
+
+                <br><br>
+                <div class="second-content" style="color: black; width: 620px; margin-left: 45px; font-size: 18px;">
+                  Thinkific is a software platform that enables entrepreneurs to create, market, sell, and deliver their own online courses.
+                Our mission is no less than to revolutionize the way people learn
+                and earn online by giving them the tools they need to turn their expertise
+                into a sustainable business that impacts both them and their audience.
+                </div>
+
+              <br><br><br>
+            </div>
+
+
+         </div>
+</div>
+
+
+
+
+
+<div class="jumbotron">
+        <div class="card-success" >
+            <section class="home-intro">
+                <img src="<?php echo base_url('assets/images/g&f/img3.webp');?>" style="width: 100%;">
+                <script src="<?php echo base_url('assets/projet_platforme/js/observers.js');?>"></script>                     
+            </section>
+            <div class="card-body">
+            <h1 class="card-title text-center" style="margin-top: 30px;">
+            It all started with a single course creator and a big problem</h1><br>
+    <div class = "container-fluid"> 
+      <div class="row">
+            <div class="card-text col-sm-6" style="font-size: 18px; width: 300px;">Thinkific was conceived when co-founder and CEO Greg Smith decided to take his LSAT course online with the help of his brother Matt Smith to reach more students. For Greg, taking his course online meant an opportunity to reach more students globally, and to generate more revenue and freedom. The revenues from his online course soon surpassed his corporate law practice, and as the course took off 
+            and helped more and more students, other entrepreneurs and businesses reached out asking how they could do the same.
+            <br><br>
+            They wanted to sell their own courses on their website and drive business growth under their own brand, with full control over their content, data, and business. Greg and Matt, along with co-founders Miranda Lievers and Matt Payne, 
+            set out to build the best platform for course creators and businesses looking to educate clients and potential clients.
+            </div>
+            <div class="card-text col-sm-6" style="font-size: 18px; width: 300px;">
+              <img src="<?php echo base_url('assets/images/g&f/img4.png');?>" style="width:100%;">
+            </div>
+        </div>
+      </div>
+
+
+
+
+            </div>
+        </div>   
+</div>
+
+<div class="text-center" style="background-image:url('<?php echo base_url('assets/images/g&f/img5.webp');?>'); width: 100%;">
+  <br><br><br>
+    <h6 style="padding:10px; font-family: 'Poppins', sans-serif; font-size: 25px;"> Try Virtual-Platform yourself !</h6>
+    <h1 style="font-family: 'Poppins', sans-serif; font-size: 35px;">Accomplish your student success <br> goals faster with G&F e_learning platform.</h1>
+    <form action="" class="form-inline" style="position: relative;padding-left: 35%;">
+        <input type="email" name="email" placeholder="your.address@mail.com" style="width: 23%;"> &nbsp; &nbsp;
+        <button type="submit" class="btn btn-primary">Get Started</button> <br><br><br><br>
+    </form>
+<br>
+
+</div>
+
+<!-- SOCIAL MEDIA -->
+<footer>
+<div class="container d-flex justify-content-center">
+
+  <div class="social-buttons mt-5">
+    <button class="neo-button"><i class="fa fa-facebook fa-1x"></i> </button>
+    <button class="neo-button"><i class="fa fa-linkedin fa-1x"></i></button>
+    <button class="neo-button"><i class="fa fa-google fa-1x"></i> </button>
+    <button class="neo-button"><i class="fa fa-youtube fa-1x"></i> </button>
+    <button class="neo-button"><i class="fa fa-twitter fa-1x"></i> </button>
+
+  </div>
+
+</div>
+<br><br>
+</footer>
+<!-- END SOCIAL MEDIA -->
+
+<script src="<?php echo base_url('assets/projet_platforme/js/observers.js'); ?>"></script>
+<script src="<?php echo base_url('assets/projet_platforme/js/signup.js'); ?>"></script>
+
+<br><br><br>
+  </body>
+</html>
