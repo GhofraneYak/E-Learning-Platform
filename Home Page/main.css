@@ -112,6 +112,7 @@ header {
 .home-intro {
   color: white;
   text-align: center;
+  margin-top: -65px;
 }
 
 .home-about {
